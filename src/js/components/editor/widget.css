@@ -1,0 +1,35 @@
+.widget-content {
+  padding: 10px;
+}
+
+.widget-title {
+  margin-bottom: 10px;
+}
+
+.widget-table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.message {
+  border: 1px solid black;
+}
+
+td {
+  padding: 10px 0px;
+  word-wrap: break-word;
+}
+
+.message-from {
+  padding-left: 10px;
+}
+
+.message-subject {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.message-received {
+  width: 25%;
+}

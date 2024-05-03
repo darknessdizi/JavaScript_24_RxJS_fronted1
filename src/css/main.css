@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #767676;
+  padding-top: 10px;
+}
+
+._task {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+._container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: aquamarine;
+  overflow: hidden; /* Скрывает содержимое вне блока */
+  overflow-y: auto; /* Включаем скролл если блок переполнен */
+}
+
+._widget-first {
+  width: 400px;
+  height: 400px;
+}
+
+._widget-second {
+  width: 200px;
+  height: 200px;
+}
+
+._widget-third {
+  height: 400px;
+}
