@@ -12,6 +12,6 @@
       "WithStatement"
     ],
     "no-console": "off",
-    "no-alert": "off"
+    "no-underscore-dangle":  ["error", { "allow": ["_tooltips", "_addZero"] }]
   }
 }

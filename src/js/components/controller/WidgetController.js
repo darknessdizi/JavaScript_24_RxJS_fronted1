@@ -41,7 +41,7 @@ export default class WidgetController {
           email: item.from,
           subject: subjectText,
           time: WidgetController.getNewFormatDate(timeMessage),
-        }
+        };
         this.edit.drawMessage(params);
       }
     }

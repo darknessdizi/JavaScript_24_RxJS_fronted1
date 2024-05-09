@@ -1,5 +1,9 @@
-// import { Subject, catchError, of } from 'rxjs';
-import { Observable, Subject, map, catchError, of } from 'rxjs';
+// import { Subject, Observable, catchError, of, map } from 'rxjs';
+import {
+  Subject,
+  catchError,
+  of,
+} from 'rxjs';
 import { ajax } from 'rxjs/ajax';
 import Widget from './Widget';
 

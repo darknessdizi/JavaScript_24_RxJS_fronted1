@@ -4,9 +4,10 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   // devServer: {
-  // port: 9090,
-  // Фиксируем порт для нашего сервера разработки продукта
-  // (для удобства указания ссылок для нашего браузера)
+  //   compress: true,
+  //   port: 9000,
+  //   // Фиксируем порт для нашего сервера разработки продукта
+  //   // (для удобства указания ссылок для нашего браузера)
   // },
   output: {
     path: path.resolve(__dirname, 'dist'),
