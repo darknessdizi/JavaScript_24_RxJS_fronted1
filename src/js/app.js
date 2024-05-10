@@ -24,7 +24,9 @@ const hotObservable$ = new Subject(); // один независимый пот�
 
 setInterval(() => {
   // ajax.getJSON - поток данных сетевого запроса на заданный URL
-  const stream$ = ajax.getJSON('http://localhost:9000/messages/unread')
+  const url = 'https://javascript-24-rxjs-backend1.onrender.com/messages/unread';
+  const stream$ = ajax.getJSON(url)
+  // const stream$ = ajax.getJSON('http://localhost:9000/messages/unread')
     .pipe(catchError((error) => of(error)));
     // catchError Ловит ошибку, обрабатывает и возвращает как значение
     // события для next (в callback)

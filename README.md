@@ -1,5 +1,11 @@
 # Домашнее задание к занятию "11. RxJS"
 
+[![Build status](https://ci.appveyor.com/api/projects/status/y2u17jrfsk7hlsfy?svg=true)](https://ci.appveyor.com/project/darknessdizi/javascript-24-rxjs-fronted1)
+
+Ссылка на страницу: https://darknessdizi.github.io/JavaScript_24_RxJS_fronted1/
+
+Ссылка на сервер (Render): https://javascript-24-rxjs-backend1.onrender.com
+
 Правила сдачи задания:
 
 1. **Важно**: в рамках этого ДЗ можно использовать любой менеджер пакетов
