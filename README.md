@@ -2,9 +2,21 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/y2u17jrfsk7hlsfy?svg=true)](https://ci.appveyor.com/project/darknessdizi/javascript-24-rxjs-fronted1)
 
-Ссылка на страницу: https://darknessdizi.github.io/JavaScript_24_RxJS_fronted1/
+## Backend
+
+Ссылка на git-hub репозиторий (backend): https://github.com/darknessdizi/JavaScript_24_RxJS_backend1.git
 
 Ссылка на сервер (Render): https://dashboard.render.com/web/srv-coujmpen7f5s73b82ld0/events
+
+---
+
+## Fronted
+
+Ссылка на git-hub репозиторий (fronted): https://github.com/darknessdizi/JavaScript_24_RxJS_fronted1.git
+
+Ссылка на страницу: https://darknessdizi.github.io/JavaScript_24_RxJS_fronted1/
+
+---
 
 Правила сдачи задания:
 

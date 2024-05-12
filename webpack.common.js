@@ -1,34 +1,18 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin'); // Плагин webpack для удаления/очистки папок сборки
 
 module.exports = {
-  // devServer: {
-  //   compress: true,
-  //   port: 9000,
-  //   // Фиксируем порт для нашего сервера разработки продукта
-  //   // (для удобства указания ссылок для нашего браузера)
-  // },
+  // devtool: 'source-map',   // проверить как работает!!!!!!!!!!!!!!!!!!!!
+  entry: './src/index.js',
+  target: 'web',
   output: {
     path: path.resolve(__dirname, 'dist'),
-  },
-  resolve: {
-    // Add `.ts` and `.tsx` as a resolvable extension.
-    extensions: ['.ts', '.tsx', '.js'],
+    publicPath: '',
   },
   module: {
     rules: [
-      {
-        test: /\.(png|jpg|gif|svg)$/i,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              limit: 8192,
-            },
-          },
-        ],
-      },
       {
         test: /\.js$/,
         exclude: /node_modules/,
@@ -50,9 +34,15 @@ module.exports = {
           MiniCssExtractPlugin.loader, 'css-loader',
         ],
       },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
+      { test: /\.pdf$/, type: 'asset/inline' },
     ],
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new HtmlWebPackPlugin({
       template: './src/index.html',
       filename: './index.html',
